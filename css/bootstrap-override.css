@@ -1,0 +1,152 @@
+.navbar-nav>li>a, .center-block a {
+  color: white !important;
+}
+.list-group-item {
+  background-color: rgba(255,255,255,.25);
+  border: none;
+  font-family: 'HelveticaNeue Light';
+  font-size: 18px;
+}
+.list-group-item:hover {
+  background-color: rgba(255,255,255,.5);
+  border: none;
+  font-family: 'HelveticaNeue Medium';
+  font-size: 18px;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* 1200 */
+
+@media (min-width: 1200px) {
+
+}
+
+/* 990 */
+
+@media (max-width: 990px) {
+  body {
+      padding: 66px 0;
+  }
+  .visible-md {
+    display: none;
+  }
+
+}
+@media (min-width: 990px) {
+  body {
+      padding: 66px 0;
+  }
+  
+} 
+
+/* 768 */
+
+@media (max-width: 768px) {
+  body {
+    padding: 55px 0;
+  }
+  .navbar-left,.navbar-header {
+    float: left !important;
+    height: 40px;
+  }
+  .navbar-right {
+    float: right !important;
+  }
+  .center-block {
+    padding-top: 10px;
+  }
+
+  .list-item-text {
+    padding-top:15px;
+  }
+  /* Formula page */
+  .navbar-left, .navbar-right {
+    font-size: 24px;
+  }
+  .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1;
+  }
+  .formulapage-header {
+    margin-top: 0;
+  }
+
+  .navbar-header.center-block {
+    padding-top: 0px;
+  }
+
+  /* search page */
+  #Ingretizer .navbar-right>li>a {
+    line-height: 40px;
+  }
+}
+
+/* 480 */
+
+@media (max-width: 480px) {
+  body {
+    padding: 55px 0 66px;
+    height: auto;
+  }
+  .navbar-header, .navbar-header.center-block {
+    padding:7px;
+    font-size: 24px;
+  }
+
+  /*#Ingretizer .navbar-header, #Ingretizer .navbar-header.center-block,*/
+  #Ingretizer .navbar-nav>li>a {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .mainpage-header, #Ingretizer .center-block {
+    margin-top: 0;
+  }
+  .intro-text.col-xs-6 {
+    width:100%;
+    left: 0;
+  }
+  .mainpage-menu .col-md-12 {
+    padding-left: 45px;
+  }
+  .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+    margin-left:0;
+  }
+  .f-nav-name.col-xs-12 {
+    padding:0;
+    font-size: 10px;
+    font-weight: 200;
+    color: rgba(255,255,255,.7);
+  }
+  .btn {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 0;
+  }
+
+  /* Formula Page */
+  #tab1 .formula-title {
+    margin: 20px 0px 30px 0px;
+    font-size: 28px;
+    padding-left: 15px;
+    font-family: 'HelveticaNeue Medium';
+  }
+  #tab1 ol {
+    -webkit-padding-start: 40px;
+  }
+  #tab1 ol li {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+}
+
+/* 360 */
+
+@media (max-width: 360px) {
+
+
+}
