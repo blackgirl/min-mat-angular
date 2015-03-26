@@ -1,4 +1,4 @@
-.mainpage-wrapper {
+#mainpage-wrapper {
 	padding: 0px;
 }
 #Mainpage {
@@ -15,6 +15,7 @@
 .mainpage-header .container {
 	padding-right: 0px;
 	padding-left: 0px;
+	width:100%;
 }
 .mainpage-menu .row {
 	font-size: 14px;
@@ -40,9 +41,42 @@
 }
 
 .mainpage-menu .item-name {
-	line-height: 24px;
+	line-height: 32px;
 	font-size: 16px;
 }
 .mainpage-menu .menu-item {
 	/*padding:15px ;*/
+	line-height: 32px;
 }
+
+
+
+
+	.slide {
+      position: absolute;
+      /*top: 15%;*/
+      width: 100%;
+    }
+    .slide div {
+      /*margin: 10px;*/
+    }
+    
+    .slide.ng-enter,
+    .slide.ng-leave {
+      transition: all 1s;
+      z-index: 1;
+    }
+    
+    .slide.ng-enter {
+      right: -100%;
+      opacity: 0;
+    }
+    .slide.ng-enter.ng-enter-active,
+    .slide.ng-leave {
+      right: 0;
+      opacity: 1;
+    }
+    .slide.ng-leave.ng-leave-active {
+      left: 100%;
+      opacity: 0;
+    }

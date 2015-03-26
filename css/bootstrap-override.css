@@ -1,6 +1,9 @@
 .navbar-nav>li>a, .center-block a {
   color: white !important;
 }
+.nav>li>a {
+  padding: 10px;
+}
 .list-group-item {
   background-color: rgba(255,255,255,.25);
   border: none;
@@ -18,6 +21,16 @@
   border-top-right-radius: 0px;
 }
 
+.navbar-fixed-bottom {
+  position: absolute;
+}
+
+.carousel-inner {
+  margin-bottom: 55px;
+}
+.carousel-content span {
+    font-size: 24px;
+}
 /* 1200 */
 
 @media (min-width: 1200px) {
@@ -27,7 +40,8 @@
 /* 990 */
 
 @media (max-width: 990px) {
-  body {
+
+  section {
       padding: 66px 0;
   }
   .visible-md {
@@ -36,7 +50,7 @@
 
 }
 @media (min-width: 990px) {
-  body {
+  section {
       padding: 66px 0;
   }
   
@@ -45,10 +59,10 @@
 /* 768 */
 
 @media (max-width: 768px) {
-  body {
+  section {
     padding: 55px 0;
   }
-  .navbar-left,.navbar-header {
+  .navbar-left,.navbar-header, .navbar-right {
     float: left !important;
     height: 40px;
   }
@@ -62,14 +76,24 @@
   .list-item-text {
     padding-top:15px;
   }
-  /* Formula page */
+  
+  .navbar {
+    min-height: 1px;
+  }
   .navbar-left, .navbar-right {
     font-size: 24px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0px;
   }
   .navbar-nav>li>a {
     padding-top: 5px;
     padding-bottom: 5px;
     line-height: 1;
+  }
+  .navbar-left>li>a, .navbar-right>li>a {
+    line-height: 1.75;
+    padding: 10px;
   }
   .formulapage-header {
     margin-top: 0;
@@ -80,7 +104,8 @@
   }
 
   /* search page */
-  #Ingretizer .navbar-right>li>a {
+  #Ingretizer .navbar-right>li>a,
+  #Ingretizer .navbar-left>li>a {
     line-height: 40px;
   }
 }
@@ -88,15 +113,24 @@
 /* 480 */
 
 @media (max-width: 480px) {
-  body {
+  section {
     padding: 55px 0 66px;
     height: auto;
   }
-  .navbar-header, .navbar-header.center-block {
+  section.mainpage-menu {
+    padding-top:0;
+  }
+  .navbar-header, .navbar-header.center-block,  .navbar-right{
     padding:7px;
     font-size: 24px;
+    font-size: 18px;
   }
-
+  .navbar-right {
+    padding:0px;
+  }
+  .center-block a {
+    line-height: 2.25;
+  }
   /*#Ingretizer .navbar-header, #Ingretizer .navbar-header.center-block,*/
   #Ingretizer .navbar-nav>li>a {
     font-size: 18px;
@@ -109,8 +143,25 @@
     width:100%;
     left: 0;
   }
+
+  .form-control.ng-pristine {
+    border: 0px solid #706ab1; /*main color*/
+    padding-left: 30px;
+    font-size: 14px;
+    padding-top: 10px; 
+    line-height: 1;
+    height:auto;
+    background-color: #e2e0ee
+    border-radius: 6px;
+  }
+  .f-nav-name.col-xs-12 {
+    padding:0;
+    font-size: 10px;
+    font-weight: 200;
+    color: rgba(255,255,255,.7);
+  }
   .mainpage-menu .col-md-12 {
-    padding-left: 45px;
+    padding-left: 30px;
   }
   .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
     margin-left:0;
@@ -126,11 +177,24 @@
     padding-right: 8px;
     border-radius: 0;
   }
-
+  .carousel-content span {
+    font-size: 18px;
+    font-family: 'HelveticaNeue Medium';
+  }
+  .checkbox label {
+    min-height: 24px; /* NP*/
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .checkbox label::before, .checkbox label::after {
+    width: 24px;
+    height: 24px;
+  }
   /* Formula Page */
   #tab1 .formula-title {
     margin: 20px 0px 30px 0px;
     font-size: 28px;
+    font-size: 18px;
     padding-left: 15px;
     font-family: 'HelveticaNeue Medium';
   }

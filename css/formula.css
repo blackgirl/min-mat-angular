@@ -34,7 +34,12 @@
 	border-width: 0;
 	color: white;
 }
-
+.arrow-left.themify {
+	background: url(../images/arrow_left.png) no-repeat;
+	background-size: 100%;
+	width:18px;
+	height:18px;
+}
 /* Botstrap overwrite */
 .nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>li>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
 	border:none;
@@ -43,10 +48,13 @@
 .page-formula, .tab-content {
 	height: 100%;
 }
+section.page-formula {
+	padding-top: 0px;
+}
 .tab-pane {
 	height:100%;
 	padding: 30px 0;
-	background: #7f79c8;/*
+	/* background: #7f79c8; *//*
 	position:relative;
 	bottom: 50px;*/
 }
@@ -56,10 +64,19 @@
 	border-bottom: 1px solid #7f79c8;
 }
 #tab1 .formula-title {
-	margin: 20px 0px 30px 0px;
+	margin: 20px 0px 10px 0px;
 	font-size: 28px;
 	padding-left: 30px;
+	line-height: 28px;
 	font-family: 'HelveticaNeue Medium';
+}
+#tab1 .formula-description {
+	margin: 20px 0px 10px 0px;
+	font-weight: normal;
+	font-size: 18px;
+	padding-left: 30px;
+	font-family: 'HelveticaNeue Medium';
+	white-space: pre-wrap;
 }
 #tab1 ol {
 	-webkit-padding-start: 60px;
